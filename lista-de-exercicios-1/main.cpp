@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+#include "cadastro.h"
+
+using namespace std;
+
+int main() {
+    return 0;
+}
