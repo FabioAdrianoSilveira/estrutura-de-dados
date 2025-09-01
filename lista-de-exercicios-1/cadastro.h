@@ -5,11 +5,11 @@
 
 using namespace std;
 
-union Sexo
+enum Sexo
 {
-    int masculino;
-    int feminino;
-    int outro;
+    masculino,
+    feminino,
+    outro
 };
 
 struct Pessoa
