@@ -30,21 +30,21 @@ int main()
             getline(cin.ignore(), nome);
             cout << "Digite a idade: ";
             cin >> idade;
-            cout << "Informe o sexo (0 = Masculino, 1 = Feminino, 2 = Outro)";
+            cout << "Informe o sexo (0 = Masculino, 1 = Feminino, 2 = Outro): ";
             cin >> sexoInt;
 
             switch (sexoInt)
             {
             case 0:
-                sexo.masculino = 1;
+                sexo = masculino;
                 break;
 
             case 1:
-                sexo.feminino = 1;
+                sexo = feminino;
                 break;
 
             case 2:
-                sexo.outro = 1;
+                sexo= outro;
                 break;
 
             default:
@@ -56,7 +56,7 @@ int main()
             cadastro = cadastrarPessoa(pessoas, 10, &nome, idade, sexo, &proximaPosicao);
             if (cadastro == true)
             {
-                cout << "Cadastro realizado com sucesso!\n";
+                cout << "Cadastro realizado com sucesso!\n\n";
             }
             else
             {
