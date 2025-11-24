@@ -24,18 +24,18 @@ Vector *Insert(Vector *v, int i)
 
 Vector *Reverse(Vector *currentNode)
 {
-    Vector *previousNode = nullptr;
+    Vector *reverseNode = nullptr;
     Vector *nextNode;
 
     while (currentNode != nullptr)
     {
         nextNode = currentNode->next;
-        currentNode->next = previousNode;
-        previousNode = currentNode;
+        currentNode->next = reverseNode;
+        reverseNode = currentNode;
         currentNode = nextNode;
         
     }
-    return previousNode;
+    return reverseNode;
 }
 
 void Print(Vector *v)
