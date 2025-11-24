@@ -183,15 +183,13 @@ int main()
 
         case 5:
             cout << "\nEncerrando o programa..." << endl;
-            break;
+            LiberarEstoque(estoque);
+            exit(1);
 
         default:
             cout << "Opcao invalida. Por favor, escolha um numero entre 1 e 5." << endl;
             main();
         }
     } while (opcao != 5);
-
-    LiberarEstoque(estoque);
-
     return 0;
 }
