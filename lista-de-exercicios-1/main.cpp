@@ -71,7 +71,7 @@ int main()
 
         case 3:
             cout << "Finalizando sistema";
-            break;
+            exit(1);
 
         default:
             cout << "Opcao invalida! Tente novamente\n";
